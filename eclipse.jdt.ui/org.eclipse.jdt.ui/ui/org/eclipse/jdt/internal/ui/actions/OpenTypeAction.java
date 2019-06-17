@@ -31,6 +31,7 @@ import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
 
 import org.eclipse.ui.IActionDelegate2;
+import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.IWorkbenchWindowActionDelegate;
@@ -55,6 +56,8 @@ import org.eclipse.jdt.internal.ui.util.ExceptionHandler;
 
 public class OpenTypeAction extends Action implements IWorkbenchWindowActionDelegate, IActionDelegate2 {
 
+	private IWorkbenchWindow window;
+
 	public OpenTypeAction() {
 		super();
 		setText(JavaUIMessages.OpenTypeAction_label);
@@ -71,12 +74,13 @@ public class OpenTypeAction extends Action implements IWorkbenchWindowActionDele
 
 	@Override
 	public void runWithEvent(Event e) {
-		Shell parent= JavaPlugin.getActiveWorkbenchShell();
+		final Shell parent= window.getShell();
 		if (! doCreateProjectFirstOnEmptyWorkspace(parent)) {
 			return;
 		}
 
-		SelectionDialog dialog= new OpenTypeSelectionDialog(parent, true, PlatformUI.getWorkbench().getProgressService(), null, IJavaSearchConstants.TYPE);
+		IWorkbench workbench= window.getWorkbench();
+		SelectionDialog dialog= new OpenTypeSelectionDialog(parent, true, workbench.getProgressService(), null, IJavaSearchConstants.TYPE);
 		dialog.setTitle(JavaUIMessages.OpenTypeAction_dialogTitle);
 		dialog.setMessage(JavaUIMessages.OpenTypeAction_dialogMessage);
 
@@ -97,7 +101,7 @@ public class OpenTypeAction extends Action implements IWorkbenchWindowActionDele
 			return;
 		}
 
-		final IWorkbenchPage workbenchPage= JavaPlugin.getActivePage();
+		final IWorkbenchPage workbenchPage= window.getActivePage();
 		if (workbenchPage == null) {
 			IStatus status= new Status(IStatus.ERROR, JavaPlugin.getPluginId(), JavaUIMessages.OpenTypeAction_no_active_WorkbenchPage);
 			ExceptionHandler.handle(status, JavaUIMessages.OpenTypeAction_errorTitle, JavaUIMessages.OpenTypeAction_errorMessage);
@@ -154,7 +158,7 @@ public class OpenTypeAction extends Action implements IWorkbenchWindowActionDele
 
 	@Override
 	public void init(IWorkbenchWindow window) {
-		// do nothing.
+		this.window= window;
 	}
 
 	@Override
