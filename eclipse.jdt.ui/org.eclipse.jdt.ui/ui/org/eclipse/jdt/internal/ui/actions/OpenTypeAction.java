@@ -92,19 +92,19 @@ public class OpenTypeAction extends Action implements IWorkbenchWindowActionDele
 		if (types == null || types.length == 0)
 			return;
 
+		final IWorkbenchPage workbenchPage= window.getActivePage();
+		if (workbenchPage == null) {
+			IStatus status= new Status(IStatus.ERROR, JavaPlugin.getPluginId(), JavaUIMessages.OpenTypeAction_no_active_WorkbenchPage);
+			ExceptionHandler.handle(status, JavaUIMessages.OpenTypeAction_errorTitle, JavaUIMessages.OpenTypeAction_errorMessage);
+			return;
+		}
+
 		if (types.length == 1) {
 			try {
 				JavaUI.openInEditor((IJavaElement)types[0], true, true);
 			} catch (CoreException x) {
 				ExceptionHandler.handle(x, JavaUIMessages.OpenTypeAction_errorTitle, JavaUIMessages.OpenTypeAction_errorMessage);
 			}
-			return;
-		}
-
-		final IWorkbenchPage workbenchPage= window.getActivePage();
-		if (workbenchPage == null) {
-			IStatus status= new Status(IStatus.ERROR, JavaPlugin.getPluginId(), JavaUIMessages.OpenTypeAction_no_active_WorkbenchPage);
-			ExceptionHandler.handle(status, JavaUIMessages.OpenTypeAction_errorTitle, JavaUIMessages.OpenTypeAction_errorMessage);
 			return;
 		}
 
