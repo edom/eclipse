@@ -15,11 +15,13 @@ package org.eclipse.jdt.internal.ui.util;
 
 import java.io.StringWriter;
 import java.lang.reflect.InvocationTargetException;
+import java.util.List;
 
 import org.eclipse.swt.widgets.Shell;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.MultiStatus;
 import org.eclipse.core.runtime.Status;
 
 import org.eclipse.jface.dialogs.ErrorDialog;
@@ -66,7 +68,7 @@ public class ExceptionHandler {
 	/**
 	 * Handles the given <code>IStatus</code>. The workbench shell is used as a parent for the
 	 * dialog window.
-	 * 
+	 *
 	 * @param status the <code>IStatus</code> to be handled
 	 * @param title the dialog window's window title
 	 * @param message message to be displayed by the dialog window
@@ -110,6 +112,23 @@ public class ExceptionHandler {
 	 */
 	public static void handle(InvocationTargetException e, Shell parent, String title, String message) {
 		fgInstance.perform(e, parent, title, message);
+	}
+
+	public static void handle(List<? extends CoreException> exceptions,
+			String title, String message, String multiStatusMessage) {
+		final int count= exceptions.size();
+		if (count == 1) {
+			handle(exceptions.get(0), title, message);
+		} else if (count > 1) {
+			final MultiStatus multiStatus= new MultiStatus(JavaPlugin.getPluginId(),
+					IJavaStatusConstants.INTERNAL_ERROR, multiStatusMessage, null);
+			for (CoreException x : exceptions) {
+				multiStatus.merge(x.getStatus());
+			}
+			if (!multiStatus.isOK()) {
+				handle(multiStatus, title, message);
+			}
+		}
 	}
 
 	//---- Hooks for subclasses to control exception handling ------------------------------------

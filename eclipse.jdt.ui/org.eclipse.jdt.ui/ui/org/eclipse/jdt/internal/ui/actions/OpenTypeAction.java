@@ -13,12 +13,14 @@
  *******************************************************************************/
 package org.eclipse.jdt.internal.ui.actions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Shell;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
 import org.eclipse.core.runtime.Status;
 
 import org.eclipse.core.resources.IWorkspaceRoot;
@@ -39,14 +41,12 @@ import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.actions.NewProjectAction;
 import org.eclipse.ui.dialogs.SelectionDialog;
 
-import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.search.IJavaSearchConstants;
 
 import org.eclipse.jdt.ui.JavaUI;
 
 import org.eclipse.jdt.internal.ui.IJavaHelpContextIds;
-import org.eclipse.jdt.internal.ui.IJavaStatusConstants;
 import org.eclipse.jdt.internal.ui.JavaPlugin;
 import org.eclipse.jdt.internal.ui.JavaPluginImages;
 import org.eclipse.jdt.internal.ui.JavaUIMessages;
@@ -99,28 +99,21 @@ public class OpenTypeAction extends Action implements IWorkbenchWindowActionDele
 			return;
 		}
 
-		if (types.length == 1) {
-			try {
-				JavaUI.openInEditor((IJavaElement)types[0], true, true);
-			} catch (CoreException x) {
-				ExceptionHandler.handle(x, JavaUIMessages.OpenTypeAction_errorTitle, JavaUIMessages.OpenTypeAction_errorMessage);
-			}
-			return;
-		}
-
-		MultiStatus multiStatus= new MultiStatus(JavaPlugin.getPluginId(), IJavaStatusConstants.INTERNAL_ERROR, JavaUIMessages.OpenTypeAction_multiStatusMessage, null);
+		final List<CoreException> exceptions= new ArrayList<>();
 
 		for (int i= 0; i < types.length; i++) {
-			IType type= (IType)types[i];
+			IType type= (IType) types[i];
 			try {
 				JavaUI.openInEditor(type, true, true);
 			} catch (CoreException x) {
-				multiStatus.merge(x.getStatus());
+				exceptions.add(x);
 			}
 		}
 
-		if (!multiStatus.isOK())
-			ExceptionHandler.handle(multiStatus, JavaUIMessages.OpenTypeAction_errorTitle, JavaUIMessages.OpenTypeAction_errorMessage);
+		ExceptionHandler.handle(exceptions,
+				JavaUIMessages.OpenTypeAction_errorTitle,
+				JavaUIMessages.OpenTypeAction_errorMessage,
+				JavaUIMessages.OpenTypeAction_multiStatusMessage);
 	}
 
 	/**
