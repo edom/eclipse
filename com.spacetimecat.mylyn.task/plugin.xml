@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.repositories">
+      <connectorCore
+            class="com.spacetimecat.mylyn.task.My_Connector">
+      </connectorCore>
+      <connectorUi
+            class="com.spacetimecat.mylyn.task.My_Connector_Ui">
+      </connectorUi>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.editors">
+      <pageFactory
+            class="com.spacetimecat.mylyn.task.My_Task_Editor_Page_Factory"
+            id="com.spacetimecat.mylyn.task.editorPageFactory">
+      </pageFactory>
+   </extension>
+
+</plugin>

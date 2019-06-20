@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: My Mylyn Task Repository
+Bundle-SymbolicName: com.spacetimecat.mylyn.task;singleton:=true
+Bundle-Version: 0.0.0.qualifier
+Bundle-Activator: com.spacetimecat.mylyn.task.My_Plugin
+Bundle-Vendor: Erik Dominikus
+Require-Bundle: com.spacetimecat.eclipse.commons;bundle-version="0.0.0",
+ org.eclipse.core.runtime,
+ org.eclipse.jface;bundle-version="3.16.0",
+ org.eclipse.mylyn.commons.ui;bundle-version="3.24.2",
+ org.eclipse.mylyn.tasks.core;bundle-version="3.24.2",
+ org.eclipse.mylyn.tasks.ui;bundle-version="3.24.2",
+ org.eclipse.ui.forms;bundle-version="3.8.0",
+ org.eclipse.ui.workbench;bundle-version="3.115.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.spacetimecat.mylyn.task
+Bundle-ActivationPolicy: lazy
