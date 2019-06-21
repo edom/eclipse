@@ -495,6 +495,9 @@ public final class TaskRepository extends PlatformObject {
 		return timeZoneId == null || "".equals(timeZoneId) ? TimeZone.getDefault().getID() : timeZoneId; //$NON-NLS-1$
 	}
 
+	/**
+	 * Consider using {@link #getRepositoryUrl()} instead, for consistency, as {@link #setUrl(String)} is deprecated.
+	 */
 	public String getUrl() {
 		return getRepositoryUrl();
 	}

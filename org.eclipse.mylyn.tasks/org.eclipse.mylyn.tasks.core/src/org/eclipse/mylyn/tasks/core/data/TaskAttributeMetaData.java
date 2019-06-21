@@ -166,6 +166,9 @@ public class TaskAttributeMetaData {
 //		return this;
 //	}
 
+	/**
+	 * An example value is {@link TaskAttribute#KIND_DEFAULT}.
+	 */
 	public TaskAttributeMetaData setKind(String value) {
 		if (value != null) {
 			taskAttribute.putMetaDatum(TaskAttribute.META_ATTRIBUTE_KIND, value);
@@ -189,6 +192,9 @@ public class TaskAttributeMetaData {
 		return this;
 	}
 
+	/**
+	 * An example value is {@link TaskAttribute#TYPE_SHORT_TEXT}.
+	 */
 	public TaskAttributeMetaData setType(String value) {
 		if (value != null) {
 			taskAttribute.putMetaDatum(TaskAttribute.META_ATTRIBUTE_TYPE, value);

@@ -26,9 +26,14 @@ import org.eclipse.mylyn.tasks.ui.TasksUiImages;
 import org.eclipse.osgi.util.NLS;
 
 /**
+ * <p>
  * Extend to provide a custom edit query dialog, typically invoked by the user requesting properties on a query node in
  * the Task List.
- * 
+ * </p>
+ * <p>
+ * Each page of this wizard must be an instance of {@link AbstractRepositoryQueryPage}.
+ * </p>
+ *
  * @author Mik Kersten
  * @author Steffen Pingel
  * @since 3.0

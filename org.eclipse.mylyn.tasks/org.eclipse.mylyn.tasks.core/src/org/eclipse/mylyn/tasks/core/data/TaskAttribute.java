@@ -462,6 +462,20 @@ public final class TaskAttribute {
 		values.clear();
 	}
 
+	/**
+	 * <p>
+	 * Create an attribute that is a child of this attribute.
+	 * </p>
+	 * <p>
+	 * After creating the attribute, the client should set some meta-data, especially the type, kind, and label, so that
+	 * the task editor can display the attribute.
+	 * </p>
+	 *
+	 * @see #getMetaData()
+	 * @see TaskAttributeMetaData#setType(String)
+	 * @see TaskAttributeMetaData#setKind(String)
+	 * @see TaskAttributeMetaData#setLabel(String)
+	 */
 	public TaskAttribute createAttribute(String attributeId) {
 		return new TaskAttribute(this, attributeId);
 	}
