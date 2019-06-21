@@ -3063,7 +3063,22 @@ public class WorkbenchPage implements IWorkbenchPage {
 		final PartInitException ex[] = new PartInitException[1];
 		BusyIndicator.showWhile(legacyWindow.getWorkbench().getDisplay(), () -> {
 			try {
+				// Open the new tab next to the active tab.
+				final IEditorPart activePart = getActiveEditor();
+				final MPart activeModel = findPart(activePart);
 				result[0] = busyOpenEditor(input, editorID, activate, matchFlags, editorState, notify);
+				final IEditorPart newPart = result[0];
+				final MPart newModel = findPart(newPart);
+				if (activeModel != null && activeModel != newModel) {
+					final List<MUIElement> children = activeModel.getParent().getChildren();
+					if (!children.remove(newModel)) {
+						throw new AssertionError();
+					}
+					children.add(children.indexOf(activeModel) + 1, newModel);
+					if (activate) {
+						activate(newPart);
+					}
+				}
 			} catch (PartInitException e) {
 				ex[0] = e;
 			}
