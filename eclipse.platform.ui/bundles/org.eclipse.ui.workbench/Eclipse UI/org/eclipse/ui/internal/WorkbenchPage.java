@@ -3100,7 +3100,12 @@ public class WorkbenchPage implements IWorkbenchPage {
 		if (desc == null) {
 			throw new PartInitException(NLS.bind(WorkbenchMessages.EditorManager_unknownEditorIDMessage, editorId));
 		}
-		if (!desc.isOpenExternal() && isLargeDocument(input)) {
+		if (desc.isOpenExternal()) {
+			openExternalEditor((EditorDescriptor) desc, input);
+			// no editor parts for external editors, return null
+			return null;
+		}
+		if (isLargeDocument(input)) {
 			desc = getAlternateEditor();
 			if (desc == null) {
 				// the user pressed cancel in the editor selection dialog
@@ -3125,12 +3130,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 
 			recordEditor(input, desc);
 			return editor;
-		}
-
-		if (desc.isOpenExternal()) {
-			openExternalEditor((EditorDescriptor) desc, input);
-			// no editor parts for external editors, return null
-			return null;
 		}
 
 		if (desc.isInternal()) {
