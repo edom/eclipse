@@ -3173,7 +3173,9 @@ public class WorkbenchPage implements IWorkbenchPage {
 
 			recordEditor(input, desc);
 			return editor;
-		} else if (desc.isInternal()) {
+		}
+
+		if (desc.isInternal()) {
 			// look for an editor to reuse
 			EditorReference reusableEditorRef = (EditorReference) ((TabBehaviour) Tweaklets.get(TabBehaviour.KEY))
 					.findReusableEditor(this);
