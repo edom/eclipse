@@ -1349,17 +1349,11 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return closeEditors(newSaved, false);
 	}
 
-	/**
-	 * See IWorkbenchPage
-	 */
 	@Override
 	public boolean closeAllEditors(boolean save) {
 		return closeEditors(getEditorReferences(), save);
 	}
 
-	/**
-	 * See IWorkbenchPage
-	 */
 	@Override
 	public boolean closeEditors(IEditorReference[] refArray, boolean save) {
 		if (refArray.length == 0) {
@@ -1594,9 +1588,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return closeEditors(new IEditorReference[] { editorRef }, save);
 	}
 
-	/**
-	 * See IWorkbenchPage#closeEditor
-	 */
 	@Override
 	public boolean closeEditor(IEditorPart editor, boolean save) {
 		IWorkbenchPartReference ref = getReference(editor);
@@ -1953,9 +1944,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return ret;
 	}
 
-	/**
-	 * See IWorkbenchPage@findView.
-	 */
 	@Override
 	public IViewPart findView(String id) {
 		IViewReference ref = findViewReference(id);
@@ -2042,9 +2030,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return collection.toArray(new IActionSetDescriptor[collection.size()]);
 	}
 
-	/**
-	 * @see IWorkbenchPage
-	 */
 	@Override
 	public IEditorPart getActiveEditor() {
 		IWorkbenchPart activePart = getActivePart();
@@ -2387,9 +2372,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return sortedReferences.toArray(new IWorkbenchPartReference[sortedReferences.size()]);
 	}
 
-	/**
-	 * @see IWorkbenchPage
-	 */
 	@Override
 	public IAdaptable getInput() {
 		return input;
@@ -2490,9 +2472,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		});
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IViewReference[] getViewReferences() {
 		return getViewReferences(false);
@@ -2545,9 +2524,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return false;
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IViewPart[] getViews() {
 		IViewReference[] viewReferences = getViewReferences();
@@ -2559,9 +2535,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return views;
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IWorkbenchWindow getWorkbenchWindow() {
 		return legacyWindow;
@@ -2580,9 +2553,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return workingSet;
 	}
 
-	/**
-	 * @see IWorkbenchPage
-	 */
 	@Override
 	public void hideActionSet(String actionSetID) {
 		MPerspective mpersp = getCurrentPerspective();
@@ -2983,9 +2953,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		legacyWindow.updateActionSets();
 	};
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public boolean isPartVisible(IWorkbenchPart part) {
 		MPart mpart = findPart(part);
@@ -2997,9 +2964,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return perspective == null ? null : modelService.find(IPageLayout.ID_EDITOR_AREA, perspective);
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public boolean isEditorAreaVisible() {
 		MUIElement find = findSharedArea();
@@ -3039,9 +3003,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 	// composite.setVisible(false);
 	// }
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public void reuseEditor(IReusableEditor editor, IEditorInput input) {
 
@@ -3058,25 +3019,16 @@ public class WorkbenchPage implements IWorkbenchPage {
 		navigationHistory.markEditor(editor);
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IEditorPart openEditor(IEditorInput input, String editorID) throws PartInitException {
 		return openEditor(input, editorID, true, MATCH_INPUT);
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IEditorPart openEditor(IEditorInput input, String editorID, boolean activate) throws PartInitException {
 		return openEditor(input, editorID, activate, MATCH_INPUT);
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IEditorPart openEditor(final IEditorInput input, final String editorID, final boolean activate,
 			final int matchFlags) throws PartInitException {
@@ -3272,9 +3224,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		}
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public boolean isEditorPinned(IEditorPart editor) {
 		WorkbenchPartReference ref = (WorkbenchPartReference) getReference(editor);
@@ -3530,9 +3479,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		// });
 	}
 
-	/**
-	 * See IWorkbenchPage
-	 */
 	@Override
 	public boolean saveAllEditors(boolean confirm) {
 		return saveAllEditors(confirm, false, false);
@@ -4215,9 +4161,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		}
 	}
 
-	/**
-	 * @see IWorkbenchPage
-	 */
 	@Override
 	public void showActionSet(String actionSetID) {
 		Perspective persp = getActivePerspective();
@@ -4239,9 +4182,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 		}
 	}
 
-	/**
-	 * See IWorkbenchPage.
-	 */
 	@Override
 	public IViewPart showView(String viewID) throws PartInitException {
 		return showView(viewID, null, VIEW_ACTIVATE);
