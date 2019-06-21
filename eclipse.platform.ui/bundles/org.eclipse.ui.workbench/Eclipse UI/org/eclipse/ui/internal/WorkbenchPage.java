@@ -3145,15 +3145,15 @@ public class WorkbenchPage implements IWorkbenchPage {
 		}
 
 		IEditorDescriptor desc = getWorkbenchWindow().getWorkbench().getEditorRegistry().findEditor(editorId);
-		if (desc != null && !desc.isOpenExternal() && isLargeDocument(input)) {
+		if (desc == null) {
+			throw new PartInitException(NLS.bind(WorkbenchMessages.EditorManager_unknownEditorIDMessage, editorId));
+		}
+		if (!desc.isOpenExternal() && isLargeDocument(input)) {
 			desc = getAlternateEditor();
 			if (desc == null) {
 				// the user pressed cancel in the editor selection dialog
 				return null;
 			}
-		}
-		if (desc == null) {
-			throw new PartInitException(NLS.bind(WorkbenchMessages.EditorManager_unknownEditorIDMessage, editorId));
 		}
 
 		setEditorAreaVisible(true);
