@@ -3175,6 +3175,12 @@ public class WorkbenchPage implements IWorkbenchPage {
 			return editor;
 		}
 
+		if (desc.isOpenExternal()) {
+			openExternalEditor((EditorDescriptor) desc, input);
+			// no editor parts for external editors, return null
+			return null;
+		}
+
 		if (desc.isInternal()) {
 			// look for an editor to reuse
 			EditorReference reusableEditorRef = (EditorReference) ((TabBehaviour) Tweaklets.get(TabBehaviour.KEY))
@@ -3199,10 +3205,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 				// new one will be opened
 				closeEditor(reusableEditorRef, false);
 			}
-		} else if (desc.isOpenExternal()) {
-			openExternalEditor((EditorDescriptor) desc, input);
-			// no editor parts for external editors, return null
-			return null;
 		}
 
 		MPart editor = partService.createPart(CompatibilityEditor.MODEL_ELEMENT_ID);
