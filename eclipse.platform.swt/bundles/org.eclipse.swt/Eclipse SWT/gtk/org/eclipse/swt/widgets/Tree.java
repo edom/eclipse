@@ -152,6 +152,59 @@ public class Tree extends Composite {
  */
 public Tree (Composite parent, int style) {
 	super (parent, checkStyle (style));
+	setup_key_listener(this);
+}
+
+private static void setup_key_listener (Tree tree) {
+    tree.addKeyListener(new KeyAdapter() {
+        @Override
+        public void keyPressed (KeyEvent e) {
+            switch (e.keyCode) {
+            case SWT.ARROW_LEFT:
+                fold_selected_item(tree);
+                break;
+            case SWT.ARROW_RIGHT:
+                expand_selected_item(tree);
+                break;
+            }
+        }
+    });
+}
+
+private static void fold_selected_item (Tree tree) {
+    TreeItem item = get_the_selection_or_null(tree);
+    if (item != null) {
+        if (item.getExpanded()) {
+            item.setExpanded(false);
+        } else {
+            TreeItem parent = item.getParentItem();
+            if (parent != null) {
+                parent.setExpanded(false);
+                tree.setSelection(parent);
+            }
+        }
+    }
+}
+
+private static void expand_selected_item (Tree tree) {
+    TreeItem item = get_the_selection_or_null(tree);
+    if (item != null) {
+        item.setExpanded(true);
+        TreeItem first_child = get_the_first_child_or_null(item);
+        if (first_child != null) {
+            tree.setSelection(first_child);
+        }
+    }
+}
+
+private static TreeItem get_the_selection_or_null (Tree tree) {
+    TreeItem[] selection = tree.getSelection();
+    return selection.length == 1 ? selection[0] : null;
+}
+
+private static TreeItem get_the_first_child_or_null (TreeItem item) {
+    TreeItem[] children = item.getItems();
+    return children.length == 1 ? children[0] : null;
 }
 
 @Override
