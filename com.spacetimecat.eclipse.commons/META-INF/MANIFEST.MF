@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Erik's Eclipse Commons
+Bundle-SymbolicName: com.spacetimecat.eclipse.commons;singleton:=true
+Bundle-Version: 0.0.0.qualifier
+Bundle-Activator: com.spacetimecat.eclipse.commons.My_Plugin
+Bundle-Vendor: Erik Dominikus
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.spacetimecat.eclipse.commons
+Bundle-ActivationPolicy: lazy
+Export-Package: com.spacetimecat.eclipse.commons

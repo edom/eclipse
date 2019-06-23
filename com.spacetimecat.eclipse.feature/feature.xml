@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.spacetimecat.eclipse.feature"
+      label="Erik&apos;s Eclipse Customizations Feature"
+      version="0.0.0.qualifier"
+      provider-name="Erik Dominikus">
+
+   <description url="https://github.com/edom/eclipse">
+      See https://github.com/edom/eclipse
+   </description>
+
+   <copyright>
+      © 2019 Erik Dominikus
+   </copyright>
+
+   <license url="https://opensource.org/licenses/alphabetical">
+      EPL-2.0, or any of the OSI-approved licenses, at your choice.
+
+https://opensource.org/licenses/alphabetical
+   </license>
+
+   <plugin
+         id="com.spacetimecat.eclipse"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.spacetimecat.eclipse.commons"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.swt"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.workbench"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

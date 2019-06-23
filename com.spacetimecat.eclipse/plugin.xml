@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.spacetimecat.eclipse.category1"
+            name="Erik&apos;s Test Views">
+      </category>
+      <view
+            category="com.spacetimecat.eclipse.category1"
+            class="com.spacetimecat.eclipse.My_Test_View_Part"
+            id="com.spacetimecat.eclipse.view1"
+            name="Erik&apos;s Test View"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.spacetimecat.eclipse.My_PDE_P2_Test_Command"
+            id="com.spacetimecat.eclipse.command1"
+            name="Erik&apos;s PDE/P2 Test Command">
+      </command>
+   </extension>
+
+</plugin>
