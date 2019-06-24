@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,git@github.com:edom/eclipse.git,master,com.spacetimecat.eclipse.osgi"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,com.spacetimecat.eclipse"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,com.spacetimecat.eclipse.commons"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,com.spacetimecat.eclipse.feature"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,."/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,eclipse.platform.runtime/bundles/org.eclipse.core.jobs"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,eclipse.jdt.ui/org.eclipse.jdt.ui"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,org.eclipse.mylyn.tasks/org.eclipse.mylyn.tasks.core"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,org.eclipse.mylyn.tasks/org.eclipse.mylyn.tasks.ui"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,eclipse.pde.ui/ui/org.eclipse.pde.ui"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,eclipse.platform.swt/bundles/org.eclipse.swt"/>
+<project reference="1.0,git@github.com:edom/eclipse.git,master,eclipse.platform.ui/bundles/org.eclipse.ui.workbench"/>
+</provider>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1561810671108_12" label="STC Eclipse" name="STC Eclipse">
+<item elementID="=org.eclipse.core.jobs" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.mylyn.tasks.core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.jdt.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=com.spacetimecat.eclipse.commons" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.mylyn.tasks.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=com.spacetimecat.eclipse.admin.core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ui.workbench" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eclipse" type="4"/>
+<item elementID="=org.eclipse.pde.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.spacetimecat.eclipse.feature" type="4"/>
+<item elementID="=org.eclipse.swt" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=com.spacetimecat.eclipse.admin.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+</psf>

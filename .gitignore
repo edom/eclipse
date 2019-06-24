@@ -1,0 +1,8 @@
+*.swp
+/eclipse.platform.swt.binaries/bundles/org.eclipse.swt.gtk.linux.x86_64/@dot/
+/eclipse.platform.swt.binaries/bundles/org.eclipse.swt.gtk.linux.x86_64/org.eclipse.swt.gtk.linux.x86_64_*/
+/eclipse.platform.swt.binaries/bundles/org.eclipse.swt.gtk.linux.x86_64/swt.jar
+/eclipse.platform.swt.binaries/bundles/org.eclipse.swt.gtk.linux.x86_64/temp.folder/
+/eclipse.platform.swt/bundles/org.eclipse.swt/org.eclipse.swt_*/
+/private/
+/workspace-dummy/
