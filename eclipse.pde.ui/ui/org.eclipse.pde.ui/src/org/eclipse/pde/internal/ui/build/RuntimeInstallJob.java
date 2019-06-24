@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.eclipse.core.runtime.*;
 import org.eclipse.core.runtime.jobs.Job;
+import org.eclipse.equinox.p2.core.IProvisioningAgent;
 import org.eclipse.equinox.p2.core.ProvisionException;
 import org.eclipse.equinox.p2.engine.IProfile;
 import org.eclipse.equinox.p2.engine.IProfileRegistry;
@@ -30,7 +31,9 @@ import org.eclipse.equinox.p2.metadata.MetadataFactory.InstallableUnitPatchDescr
 import org.eclipse.equinox.p2.operations.*;
 import org.eclipse.equinox.p2.query.IQueryResult;
 import org.eclipse.equinox.p2.query.QueryUtil;
+import org.eclipse.equinox.p2.repository.artifact.IArtifactRepositoryManager;
 import org.eclipse.equinox.p2.repository.metadata.IMetadataRepository;
+import org.eclipse.equinox.p2.repository.metadata.IMetadataRepositoryManager;
 import org.eclipse.equinox.p2.ui.ProvisioningUI;
 import org.eclipse.osgi.util.NLS;
 import org.eclipse.pde.core.plugin.IPluginModelBase;
@@ -89,11 +92,17 @@ public class RuntimeInstallJob extends Job {
 
 			// p2 needs to know about the generated repos
 			URI destination = new File(fInfo.destinationDirectory).toURI();
+
+			// Flush caches.
+			final IProvisioningAgent agent = session.getProvisioningAgent();
+			agent.getService(IArtifactRepositoryManager.class).removeRepository(destination);
+			agent.getService(IMetadataRepositoryManager.class).removeRepository(destination);
+
 			ui.loadArtifactRepository(destination, false, subMonitor.split(1));
 
 			IMetadataRepository metaRepo = ui.loadMetadataRepository(destination, false, subMonitor.split(1));
 
-			IProfileRegistry profileRegistry = (IProfileRegistry) session.getProvisioningAgent().getService(IProfileRegistry.SERVICE_NAME);
+			IProfileRegistry profileRegistry = (IProfileRegistry) agent.getService(IProfileRegistry.SERVICE_NAME);
 			if (profileRegistry == null) {
 				return new Status(IStatus.ERROR, PDEPlugin.getPluginId(), PDEUIMessages.RuntimeInstallJob_ErrorCouldntOpenProfile);
 			}
