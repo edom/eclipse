@@ -5531,4 +5531,23 @@ public class WorkbenchPage implements IWorkbenchPage {
 		return perspectiveRegistry.findPerspectiveWithId(id);
 	}
 
+	public void movePartBy(IWorkbenchPart part, int change) {
+		// FIXME Implement movePartBy for IWorkbenchPart that is not IEditorPart?
+		final MPart model = findPart(part);
+		// FIXME Why is parent null if part is not an IEditorPart?
+		// How do we move those view tabs then?
+		final MElementContainer<MUIElement> parent = model.getParent();
+		final List<MUIElement> children = parent.getChildren();
+		final int oldPosition = children.indexOf(model);
+		if (oldPosition < 0) {
+			String message = String.format("the part %s does not belong to this page", part.getClass()); //$NON-NLS-1$
+			throw new IllegalArgumentException(message);
+		}
+		final int count = children.size();
+		final int newPosition = (count + (oldPosition + change) % count) % count;
+		children.remove(oldPosition);
+		children.add(newPosition, model);
+		activate(part);
+	}
+
 }

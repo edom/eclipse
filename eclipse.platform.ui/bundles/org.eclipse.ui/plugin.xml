@@ -845,6 +845,18 @@
             sequence="M1+PAGE_UP">
       </key>
       <key
+            commandId="org.eclipse.ui.navigate.moveTabLeft"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M2+PAGE_UP">
+      </key>
+      <key
+            commandId="org.eclipse.ui.navigate.moveTabRight"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M2+PAGE_DOWN">
+      </key>
+      <key
             contextId="org.eclipse.ui.contexts.dialogAndWindow"
             platform="carbon"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
@@ -1461,6 +1473,18 @@
             id="org.eclipse.ui.navigate.previousSubTab"
             categoryId="org.eclipse.ui.category.navigate"
             name="%command.previousSubTab.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.navigate"
+            defaultHandler="org.eclipse.ui.internal.handlers.MoveTabHandler"
+            id="org.eclipse.ui.navigate.moveTabLeft"
+            name="%command.moveTabLeft.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.navigate"
+            defaultHandler="org.eclipse.ui.internal.handlers.MoveTabHandler"
+            id="org.eclipse.ui.navigate.moveTabRight"
+            name="%command.moveTabRight.name">
       </command>
       <category
             description="%category.perspective.description"
