@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.0"?>
 <plugin>
-   
-    
+
+
 <!-- Workbench extension points -->
    <extension-point id="acceleratorConfigurations" name="%ExtPoint.acceleratorConfigurations" schema="schema/acceleratorConfigurations.exsd"/>
    <extension-point id="acceleratorScopes" name="%ExtPoint.acceleratorScopes" schema="schema/acceleratorScopes.exsd"/>
@@ -51,7 +51,7 @@
    <extension-point id="installationPages" name="%ExtPoint.installationPages" schema="schema/installationPages.exsd"/>
    <extension-point id="propertiesView" name="%ExtPoint.propertiesView" schema="schema/propertiesView.exsd"/>
    <extension-point id="quickAccess" name="%ExtPoint.quickAccess" schema="schema/quickAccess.exsd"/>
-   
+
    <extension
          point="org.eclipse.ui.contexts">
       <context
@@ -100,7 +100,7 @@
             name="%context.workbenchMenu.name">
       </context>
    </extension>
-   
+
    <extension point="org.eclipse.ui.bindings">
       <key
             commandId="org.eclipse.ui.newWizard"
@@ -175,7 +175,7 @@
             commandId="org.eclipse.ui.edit.redo"
             contextId="org.eclipse.ui.contexts.dialogAndWindow"
             sequence="M1+M2+Z"
-            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" 
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             platform="carbon"/>
       <key
       		platform="gtk"
@@ -186,7 +186,7 @@
             commandId="org.eclipse.ui.edit.redo"
             contextId="org.eclipse.ui.contexts.dialogAndWindow"
             sequence="M1+M2+Z"
-            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" 
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             platform="gtk"/>
       <key
             commandId="org.eclipse.ui.edit.cut"
@@ -502,7 +502,7 @@
             commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="M2+M3+?"/>
-            
+
       <!-- Content assist key binding for the Japanese language to prevent conflict with IME on Motif -->
       <key
             locale="ja"
@@ -568,7 +568,7 @@
             commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="M2+M3+?"/>
-      
+
       <key
             commandId="org.eclipse.ui.file.close"
             sequence="CTRL+X K"
@@ -871,7 +871,7 @@
             sequence="M4+PAGE_UP">
       </key>
    </extension>
-   
+
    <extension
          point="org.eclipse.ui.commands">
       <category
@@ -940,7 +940,7 @@
             description="%command.installationDialog.description"
             helpContextId="org.eclipse.ui.about_action_context"
             id="org.eclipse.ui.help.installationDialog"
-            name="%command.installationDialog.name"/>            
+            name="%command.installationDialog.name"/>
       <command
             categoryId="org.eclipse.ui.category.file"
             defaultHandler="org.eclipse.ui.internal.handlers.WizardHandler$New"
@@ -1498,7 +1498,7 @@
             name="%activeContextInfo.name">
       </command>
    </extension>
-   
+
    <extension
          point="org.eclipse.ui.commandImages">
       <image
@@ -1582,7 +1582,7 @@
             icon="$nl$/icons/full/etool16/help_search.png">
       </image>
    </extension>
-   
+
    <extension
          point="org.eclipse.ui.views">
       <category
@@ -1703,7 +1703,7 @@
             </parameter>
          </colorFactory>
       </colorDefinition>
-         
+
      <colorDefinition
             label="%Color.qualifierText"
             categoryId="org.eclipse.ui.workbenchMisc"
@@ -1721,7 +1721,7 @@
          <description>
             %Color.decorationsTextDesc
          </description>
-      </colorDefinition>      
+      </colorDefinition>
       <colorDefinition
             label="%Color.counterText"
             categoryId="org.eclipse.ui.workbenchMisc"
@@ -1749,7 +1749,7 @@
             %Color.contentAssistForegroundDesc
          </description>
       </colorDefinition>
-      
+
       <data
       	name="org.eclipse.ui.workbench.ACTIVE_TAB_HIGHLIGHT" value="true">
       </data>
@@ -1855,7 +1855,7 @@
           <parameter
                   name="definitionId" value="org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START">
           </parameter>
-         </colorFactory>      </colorDefinition>      
+         </colorFactory>      </colorDefinition>
 <!-- Inactive Tab Colors -->
       <colorDefinition
             label="%Color.inactiveTabText"
@@ -1908,7 +1908,7 @@
       <data
             name="org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_PERCENT"
             value="100">
-      </data>      
+      </data>
 <!-- percentage value for the inactive tab gradient -->
       <data
             name="org.eclipse.ui.workbench.INACTIVE_TAB_PERCENT"
@@ -1923,13 +1923,13 @@
       <data
             name="org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_VERTICAL"
             value="true">
-      </data>      
+      </data>
 <!-- whether the inactive gradient is vertical -->
       <data
             name="org.eclipse.ui.workbench.INACTIVE_TAB_VERTICAL"
             value="true">
       </data>
-      
+
       <theme
             id="org.eclipse.ui.ide.systemDefault"
             name="%ThemeName.SystemDefault">
@@ -1960,8 +1960,8 @@
                value="COLOR_LIST_FOREGROUND"/>
          <colorOverride
                id="COUNTER_COLOR"
-               value="COLOR_LIST_FOREGROUND"/>               
-<!-- Override color factory for active tab colors, set to defaults based on title -->               
+               value="COLOR_LIST_FOREGROUND"/>
+<!-- Override color factory for active tab colors, set to defaults based on title -->
 		<colorOverride
 				id="org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR"
 				value="COLOR_TITLE_FOREGROUND"/>
@@ -2072,7 +2072,7 @@
       <encoding name="UTF-16LE"/>
       <encoding name="US-ASCII"/>
    </extension>
-   
+
    <extension
          point="org.eclipse.ui.activitySupport">
       <triggerPoint id="org.eclipse.ui.newWizards">
@@ -2101,9 +2101,9 @@
                id="pre_UI"
                value="true">
          </hint>
-      </triggerPoint>    
+      </triggerPoint>
    </extension>
- 
+
 
    <extension
          point="org.eclipse.ui.preferenceTransfer">
@@ -2126,7 +2126,7 @@
             name="%SettingsTransfer.Preferences">
       </settingsTransfer>
    </extension>
-   
+
    <extension
            point="org.eclipse.core.expressions.propertyTesters">
         <propertyTester
@@ -2313,7 +2313,7 @@
                </instanceof>
             </with>
          </enabledWhen>
-      </handler>      
+      </handler>
       <handler
             class="org.eclipse.ui.internal.CyclePerspectiveHandler:true"
             commandId="org.eclipse.ui.window.nextPerspective">
@@ -2641,7 +2641,7 @@
             name="%installationPage.plugins.name"
             class="org.eclipse.ui.internal.about.AboutPluginsPage"
             id="30.PluginPage">
-          </page>        
+          </page>
           <page
             name="%installationPage.system.name"
             class="org.eclipse.ui.internal.about.AboutSystemPage"
