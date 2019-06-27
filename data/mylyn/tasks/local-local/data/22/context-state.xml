@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Implement cut" partName="Implement cut" title="Implement cut" tooltip="Implement cut">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-22"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Example.java" partName="Example.java" title="Example.java" tooltip="java-prolog/src/test/java/com/spacetimecat/java/prolog/example/Example.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/test/java/com/spacetimecat/java/prolog/example/Example.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5742" selectionTopPixel="2257"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

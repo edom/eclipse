@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Add Compound" partName="Add Compound" title="Add Compound" tooltip="Add Compound">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-23"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Calls.java" partName="Calls.java" title="Calls.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/Calls.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/Calls.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1821" selectionTopPixel="802"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" title="Main.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/Main.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="298" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Term.java" partName="Term.java" title="Term.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/Term.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/Term.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3775" selectionTopPixel="1567"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Call_equal.java" partName="Call_equal.java" title="Call_equal.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/Call_equal.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/Call_equal.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="474" selectionTopPixel="0"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

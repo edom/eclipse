@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Improve performance and responsiveness" partName="Improve performance and responsiveness" title="Improve performance and responsiveness" tooltip="Improve performance and responsiveness">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-39"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" title="Main.java" tooltip="org.eclipse.equinox.launcher/src/org/eclipse/equinox/launcher/Main.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.equinox.launcher/src/org/eclipse/equinox/launcher/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="54505" selectionTopPixel="20715"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OpenTypeAction.java" partName="OpenTypeAction.java" title="OpenTypeAction.java" tooltip="org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/actions/OpenTypeAction.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/actions/OpenTypeAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2536" selectionTopPixel="810"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lock.java" partName="Lock.java" title="Lock.java" tooltip="org.eclipse.swt/Eclipse SWT PI/gtk/org/eclipse/swt/internal/Lock.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.swt/Eclipse SWT PI/gtk/org/eclipse/swt/internal/Lock.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1014" selectionTopPixel="240"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

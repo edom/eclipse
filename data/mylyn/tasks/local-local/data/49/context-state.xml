@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Tabs: Improve tab management" partName="Tabs: Improve tab management" title="Tabs: Improve tab management" tooltip="Tabs: Improve tab management">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-49"/>
+</editor>
+<editor id="org.eclipse.mylyn.wikitext.ui.editor.markupEditor" name="README.md" partName="README.md" title="README.md" tooltip="com.spacetimecat.eclipse.feature/README.md">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.feature/README.md"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="613" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" partName="org.eclipse.ui.workbench" title="org.eclipse.ui.workbench" tooltip="org.eclipse.ui.workbench/plugin.xml">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.workbench/plugin.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.PropertiesFileEditor" name="plugin.properties" partName="plugin.properties" title="plugin.properties" tooltip="org.eclipse.ui/plugin.properties">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui/plugin.properties"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8736" selectionTopPixel="2903"/>
+</editor>
+<editor id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" partName="org.eclipse.ui" title="org.eclipse.ui" tooltip="org.eclipse.ui/plugin.xml">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui/plugin.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WorkbenchPage.java" partName="WorkbenchPage.java" title="WorkbenchPage.java" tooltip="org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/WorkbenchPage.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/WorkbenchPage.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="182989" selectionTopPixel="90635"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoveTabHandler.java" partName="MoveTabHandler.java" title="MoveTabHandler.java" tooltip="org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/handlers/MoveTabHandler.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/handlers/MoveTabHandler.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="715" selectionTopPixel="0"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

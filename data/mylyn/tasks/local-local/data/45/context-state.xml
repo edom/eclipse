@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Mylyn local task repository &quot;Markdown files folder&quot;" partName="Mylyn local task repository &quot;Markdown files folder&quot;" title="Mylyn local task repository &quot;Markdown files folder&quot;" tooltip="Mylyn local task repository &quot;Markdown files folder&quot;">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-45"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="p2: Create repository for our features" partName="p2: Create repository for our features" title="p2: Create repository for our features" tooltip="p2: Create repository for our features">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-60"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="P2_Agent.java" partName="P2_Agent.java" title="P2_Agent.java" tooltip="com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/P2_Agent.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/P2_Agent.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17517" selectionTopPixel="5409"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Activator.java" partName="Activator.java" title="Activator.java" tooltip="com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/Activator.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/Activator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2225" selectionTopPixel="619"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ensure_STC_Eclipse_Initialized_Command.java" partName="Ensure_STC_Eclipse_Initialized_Command.java" title="Ensure_STC_Eclipse_Initialized_Command.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/Ensure_STC_Eclipse_Initialized_Command.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/Ensure_STC_Eclipse_Initialized_Command.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2059" selectionTopPixel="296"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="My_Plugin.java" partName="My_Plugin.java" title="My_Plugin.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Plugin.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Plugin.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1966" selectionTopPixel="592"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="STC_Admin_View_Part.java" partName="STC_Admin_View_Part.java" title="STC_Admin_View_Part.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/STC_Admin_View_Part.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/STC_Admin_View_Part.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1798" selectionTopPixel="334"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="View_Part.java" partName="View_Part.java" title="View_Part.java" tooltip="com.spacetimecat.eclipse.commons/src/com/spacetimecat/eclipse/commons/View_Part.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.commons/src/com/spacetimecat/eclipse/commons/View_Part.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1168" selectionTopPixel="27"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Worker.java" partName="Worker.java" title="Worker.java" tooltip="org.eclipse.core.jobs/src/org/eclipse/core/internal/jobs/Worker.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.core.jobs/src/org/eclipse/core/internal/jobs/Worker.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2222" selectionTopPixel="555"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Queries.java" partName="Queries.java" title="Queries.java" tooltip="com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/Queries.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/Queries.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="752" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" partName="com.spacetimecat.eclipse.admin.ui" title="com.spacetimecat.eclipse.admin.ui" tooltip="com.spacetimecat.eclipse.admin.ui/plugin.xml">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/plugin.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="My_Test_View_Part.java" partName="My_Test_View_Part.java" title="My_Test_View_Part.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Test_View_Part.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Test_View_Part.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1572" selectionTopPixel="405"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProgressManager.java" partName="ProgressManager.java" title="ProgressManager.java" tooltip="org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/progress/ProgressManager.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/progress/ProgressManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="7228" selectionTopPixel="1860"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

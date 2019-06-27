@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Implement member/2 in Java" partName="Implement member/2 in Java" title="Implement member/2 in Java" tooltip="Implement member/2 in Java">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-18"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="package-info.java" partName="package-info.java" title="package-info.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/package-info.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/package-info.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="781" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Call.java" partName="Call.java" title="Call.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/Call.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/Call.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="172" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Term.java" partName="Term.java" title="Term.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog/Term.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog/Term.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="106" selectionTopPixel="0"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

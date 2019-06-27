@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Write an IDE in Eclipse" partName="Write an IDE in Eclipse" title="Write an IDE in Eclipse" tooltip="Write an IDE in Eclipse">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-14"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample_Activator.java" partName="Sample_Activator.java" title="Sample_Activator.java" tooltip="eclipse-sample-plugin/src/com/spacetimecat/eclipse_sample_plugin/Sample_Activator.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eclipse-sample-plugin/src/com/spacetimecat/eclipse_sample_plugin/Sample_Activator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="587" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" partName="org.eclipse.ui.ide" title="org.eclipse.ui.ide" tooltip="org.eclipse.ui.ide/plugin.xml">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.ide/plugin.xml"/>
+</editor>
+<editor id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" partName="org.eclipse.ui.workbench" title="org.eclipse.ui.workbench" tooltip="org.eclipse.ui.workbench/plugin.xml">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.workbench/plugin.xml"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

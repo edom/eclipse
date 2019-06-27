@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Document Var, distinguish between Var and var" partName="Document Var, distinguish between Var and var" title="Document Var, distinguish between Var and var" tooltip="Document Var, distinguish between Var and var">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-15"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="term.cpp" partName="term.cpp" title="term.cpp" tooltip="interp/src/prolog/term.cpp">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interp/src/prolog/term.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="923" selectionTopPixel="645"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="term.h" partName="term.h" title="term.h" tooltip="interp/src/prolog/term.h">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interp/src/prolog/term.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6687" selectionTopPixel="0"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

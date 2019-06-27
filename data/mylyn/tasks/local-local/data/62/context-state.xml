@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="core: Better interface for job and progress monitor" partName="core: Better interface for job and progress monitor" title="core: Better interface for job and progress monitor" tooltip="core: Better interface for job and progress monitor">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-62"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="View_Part.java" partName="View_Part.java" title="View_Part.java" tooltip="com.spacetimecat.eclipse.commons/src/com/spacetimecat/eclipse/commons/View_Part.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.commons/src/com/spacetimecat/eclipse/commons/View_Part.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="678" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Schedulers.java" partName="Schedulers.java" title="Schedulers.java" tooltip="com.spacetimecat.eclipse.commons/src/com/spacetimecat/eclipse/commons/Schedulers.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.commons/src/com/spacetimecat/eclipse/commons/Schedulers.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1386" selectionTopPixel="242"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Monitor_Job.java" partName="Monitor_Job.java" title="Monitor_Job.java" tooltip="com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/Monitor_Job.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/Monitor_Job.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3756" selectionTopPixel="1504"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="My_Test_View_Part.java" partName="My_Test_View_Part.java" title="My_Test_View_Part.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Test_View_Part.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Test_View_Part.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2424" selectionTopPixel="1033"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="P2_Agent.java" partName="P2_Agent.java" title="P2_Agent.java" tooltip="com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/P2_Agent.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/p2/P2_Agent.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5693" selectionTopPixel="1065"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Activator.java" partName="Activator.java" title="Activator.java" tooltip="com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/Activator.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.core/src/com/spacetimecat/eclipse/admin/core/internal/Activator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4492" selectionTopPixel="1230"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ensure_STC_Eclipse_Initialized_Command.java" partName="Ensure_STC_Eclipse_Initialized_Command.java" title="Ensure_STC_Eclipse_Initialized_Command.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/Ensure_STC_Eclipse_Initialized_Command.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/Ensure_STC_Eclipse_Initialized_Command.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1775" selectionTopPixel="35"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="My_Plugin.java" partName="My_Plugin.java" title="My_Plugin.java" tooltip="com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Plugin.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.admin.ui/src/com/spacetimecat/eclipse/admin/ui/internal/My_Plugin.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2114" selectionTopPixel="319"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

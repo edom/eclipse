@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Parser" partName="Parser" title="Parser" tooltip="Parser">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-29"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" title="Main.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog2/Main.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog2/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="735" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parser.java" partName="Parser.java" title="Parser.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog2/parser/Parser.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog2/parser/Parser.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="508" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Stream.java" partName="Stream.java" title="Stream.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog2/parser/Stream.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog2/parser/Stream.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="923" selectionTopPixel="270"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parse.java" partName="Parse.java" title="Parse.java" tooltip="java-prolog/src/main/java/com/spacetimecat/java/prolog2/parser/Parse.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/java-prolog/src/main/java/com/spacetimecat/java/prolog2/parser/Parse.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="316" selectionTopPixel="0"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

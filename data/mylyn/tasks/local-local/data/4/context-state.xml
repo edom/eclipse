@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Restructure the codebase to avoid confusing Eclipse" partName="Restructure the codebase to avoid confusing Eclipse" title="Restructure the codebase to avoid confusing Eclipse" tooltip="Restructure the codebase to avoid confusing Eclipse">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-4"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="prolog_call.cpp" partName="prolog_call.cpp" title="prolog_call.cpp" tooltip="interp/src/prolog_call.cpp">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/interp/src/prolog_call.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="328" selectionTopPixel="0"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

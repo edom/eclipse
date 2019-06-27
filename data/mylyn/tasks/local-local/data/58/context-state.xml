@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="SWT TreeView: Pressing the Left Arrow should select the pare..." partName="SWT TreeView: Pressing the Left Arrow should select the pare..." title="SWT TreeView: Pressing the Left Arrow should select the pare..." tooltip="SWT TreeView: Pressing the Left Arrow should select the parent of the currently selected node">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-58"/>
+</editor>
+<editor id="org.eclipse.pde.ui.featureEditor" name="feature.xml" partName="com.spacetimecat.eclipse.feature" title="com.spacetimecat.eclipse.feature" tooltip="com.spacetimecat.eclipse.feature/feature.xml">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.spacetimecat.eclipse.feature/feature.xml"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

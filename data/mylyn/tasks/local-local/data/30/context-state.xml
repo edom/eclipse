@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.mylyn.tasks.ui.editors.task" name="Centralize string matching algorithms" partName="Centralize string matching algorithms" title="Centralize string matching algorithms" tooltip="Centralize string matching algorithms">
+<input factoryID="org.eclipse.mylyn.tasks.ui.elementFactories.task.editor" taskHandle="local-30"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickAccessDialog.java" partName="QuickAccessDialog.java" title="QuickAccessDialog.java" tooltip="org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/quickaccess/QuickAccessDialog.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/quickaccess/QuickAccessDialog.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4438" selectionTopPixel="180"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OpenTypeAction.java" partName="OpenTypeAction.java" title="OpenTypeAction.java" tooltip="org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/actions/OpenTypeAction.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/actions/OpenTypeAction.java"/>
+<editorState selectionHorizontalPixel="104" selectionLength="14" selectionOffset="2002" selectionTopPixel="90"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompilationUnitEditor.java" partName="CompilationUnitEditor.java" title="CompilationUnitEditor.java" tooltip="org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/CompilationUnitEditor.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/CompilationUnitEditor.java"/>
+<editorState selectionHorizontalPixel="104" selectionLength="21" selectionOffset="7000" selectionTopPixel="135"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JavaEditor.java" partName="JavaEditor.java" title="JavaEditor.java" tooltip="org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/JavaEditor.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/JavaEditor.java"/>
+<editorState selectionHorizontalPixel="143" selectionLength="10" selectionOffset="12142" selectionTopPixel="135"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>
