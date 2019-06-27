@@ -8,12 +8,12 @@ public interface My_Closeable extends AutoCloseable {
     @Override
     void close ();
 
+    /**
+     * @deprecated Use {@link SubMonitor}.
+     */
+    @Deprecated
     static My_Closeable begin_task (IProgressMonitor monitor, String name, int total_work) {
         monitor.beginTask(name, total_work);
-        return monitor::done;
-    }
-
-    static My_Closeable of_sub_monitor (SubMonitor monitor) {
         return monitor::done;
     }
 

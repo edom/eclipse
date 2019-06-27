@@ -1,6 +1,6 @@
 package com.spacetimecat.eclipse.commons;
 
-import java.util.function.Consumer;
+import java.util.Objects;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -11,27 +11,32 @@ import org.eclipse.swt.widgets.Label;
 
 /**
  * Functional User Interface.
- *
- * @deprecated Use {@link FUI2}.
  */
-@Deprecated
-public final class FUI {
+public final class FUI2 {
 
-    private FUI () {}
+    private final Eclipse_Plugin plugin;
 
-    public static Button button (Composite parent, String text, Consumer<SelectionEvent> onSelect) {
+    public FUI2 (Eclipse_Plugin plugin) {
+        this.plugin = Objects.requireNonNull(plugin);
+    }
+
+    public Button button (Composite parent, String text, Consumer0<SelectionEvent> onSelect) {
         Button a = new Button(parent, SWT.PUSH);
         a.setText(text);
         a.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected (SelectionEvent e) {
-                onSelect.accept(e);
+                try {
+                    onSelect.accept(e);
+                } catch (Exception t) {
+                    plugin.handle_status(t);
+                }
             }
         });
         return a;
     }
 
-    public static Label label (Composite parent, String text) {
+    public Label label (Composite parent, String text) {
         Label a = new Label(parent, SWT.HORIZONTAL);
         a.setText(text);
         return a;

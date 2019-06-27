@@ -5,22 +5,22 @@
          point="org.eclipse.ui.views">
       <category
             id="com.spacetimecat.eclipse.category1"
-            name="Erik&apos;s Test Views">
+            name="STC Eclipse">
       </category>
       <view
             category="com.spacetimecat.eclipse.category1"
-            class="com.spacetimecat.eclipse.My_Test_View_Part"
+            class="com.spacetimecat.eclipse.admin.ui.internal.STC_Admin_View_Part"
             id="com.spacetimecat.eclipse.view1"
-            name="Erik&apos;s Test View"
+            name="STC Admin View"
             restorable="true">
       </view>
    </extension>
    <extension
          point="org.eclipse.ui.commands">
       <command
-            defaultHandler="com.spacetimecat.eclipse.My_PDE_P2_Test_Command"
+            defaultHandler="com.spacetimecat.eclipse.admin.ui.internal.Ensure_STC_Eclipse_Initialized_Command"
             id="com.spacetimecat.eclipse.command1"
-            name="Erik&apos;s PDE/P2 Test Command">
+            name="Ensure STC Eclipse initialized">
       </command>
    </extension>
 

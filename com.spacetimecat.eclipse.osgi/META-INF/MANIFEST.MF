@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: STC Eclipse Admin Core
+Bundle-SymbolicName: com.spacetimecat.eclipse.admin.core;singleton:=true
+Bundle-Version: 0.0.0.qualifier
+Bundle-Activator: com.spacetimecat.eclipse.admin.core.internal.Activator
+Bundle-Vendor: Erik Dominikus
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.spacetimecat.eclipse.commons,
+ org.eclipse.equinox.p2.core;version="2.0.0",
+ org.eclipse.equinox.p2.core.spi;version="2.1.0",
+ org.eclipse.equinox.p2.engine;version="2.2.0",
+ org.eclipse.equinox.p2.operations;version="2.0.0",
+ org.eclipse.equinox.p2.planner;version="2.0.0",
+ org.eclipse.equinox.p2.query;version="2.0.0",
+ org.osgi.framework;version="1.3.0"
+Automatic-Module-Name: com.spacetimecat.eclipse.osgi
+Require-Bundle: org.eclipse.equinox.console;bundle-version="1.3.300",
+ org.eclipse.core.runtime;bundle-version="3.15.300",
+ org.eclipse.equinox.p2.metadata;bundle-version="2.4.400",
+ org.eclipse.equinox.p2.metadata.repository;bundle-version="1.3.100",
+ org.eclipse.equinox.p2.repository;bundle-version="2.4.400",
+ org.eclipse.equinox.p2.artifact.repository;bundle-version="1.3.100",
+ org.eclipse.equinox.p2.transport.ecf;bundle-version="1.2.100"
+Export-Package: com.spacetimecat.eclipse.admin.core.internal;x-internal:=true,
+ com.spacetimecat.eclipse.admin.core.internal.p2;x-internal:=true
+Bundle-ActivationPolicy: lazy

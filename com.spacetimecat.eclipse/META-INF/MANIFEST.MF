@@ -1,12 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Erik's Eclipse Customizations Plugin
-Bundle-SymbolicName: com.spacetimecat.eclipse;singleton:=true
+Bundle-Name: STC Eclipse Admin UI
+Bundle-SymbolicName: com.spacetimecat.eclipse.admin.ui;singleton:=true
 Bundle-Version: 0.0.0.qualifier
-Bundle-Activator: com.spacetimecat.eclipse.My_Plugin
+Bundle-Activator: com.spacetimecat.eclipse.admin.ui.internal.My_Plugin
 Bundle-Vendor: Erik Dominikus
-Require-Bundle: com.spacetimecat.eclipse.commons;bundle-version="0.0.0",
- org.eclipse.ui;bundle-version="3.113.0",
+Require-Bundle: org.eclipse.ui;bundle-version="3.113.0",
  org.eclipse.core.runtime;bundle-version="3.15.300",
  org.eclipse.equinox.p2.core;bundle-version="2.6.0",
  org.eclipse.equinox.p2.metadata;bundle-version="2.4.400",
@@ -16,9 +15,7 @@ Require-Bundle: com.spacetimecat.eclipse.commons;bundle-version="0.0.0",
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.spacetimecat.eclipse
 Bundle-ActivationPolicy: lazy
-Export-Package: com.spacetimecat.eclipse;
-  uses:="org.osgi.framework,
-   org.eclipse.core.runtime,
-   org.eclipse.swt.widgets,
-   org.eclipse.core.commands,
-   org.eclipse.ui.part"
+Export-Package: com.spacetimecat.eclipse.admin.ui.internal;x-internal:=true
+Import-Package: com.spacetimecat.eclipse.admin.core.internal,
+ com.spacetimecat.eclipse.admin.core.internal.p2,
+ com.spacetimecat.eclipse.commons
