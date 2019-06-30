@@ -203,7 +203,6 @@ public class ProgressManager extends ProgressProvider implements IProgressServic
 	public class JobMonitor implements IProgressMonitorWithBlocking {
 		Job job;
 		JobInfo info;
-		String currentTaskName;
 		Set<IProgressMonitorWithBlocking> monitors = Collections.emptySet();
 
 		/**
@@ -232,7 +231,7 @@ public class ProgressManager extends ProgressProvider implements IProgressServic
 			this.monitors = Collections.unmodifiableSet(newSet);
 			TaskInfo currentTask = info.getTaskInfo();
 			if (currentTask != null) {
-				monitor.beginTask(currentTaskName, currentTask.totalWork);
+				monitor.beginTask(currentTask.taskName, currentTask.totalWork);
 				monitor.internalWorked(currentTask.preWork);
 			}
 		}
@@ -247,7 +246,6 @@ public class ProgressManager extends ProgressProvider implements IProgressServic
 		public void beginTask(String taskName, int totalWork) {
 			info.beginTask(taskName, totalWork);
 			refreshJobInfo(info);
-			currentTaskName = taskName;
 			monitors.forEach(listener -> listener.beginTask(taskName, totalWork));
 		}
 
@@ -292,7 +290,6 @@ public class ProgressManager extends ProgressProvider implements IProgressServic
 			}
 			info.clearChildren();
 			refreshJobInfo(info);
-			currentTaskName = taskName;
 			monitors.forEach(listener -> listener.setTaskName(taskName));
 		}
 
