@@ -265,6 +265,17 @@ public class ProgressManager extends ProgressProvider implements IProgressServic
 			monitors.forEach(listener -> listener.internalWorked(work));
 		}
 
+		public void setProgress (int done, int total) {
+			final TaskInfo taskInfo = info.getTaskInfo();
+			if (taskInfo != null) {
+				taskInfo.preWork = done;
+				taskInfo.totalWork = total;
+				refreshJobInfo(info);
+			}
+			// What should be done with the "monitors" field?
+			// Add setProgress(int,int) to IProgressMonitor?
+		}
+
 		@Override
 		public boolean isCanceled() {
 			return info.isCanceled();
