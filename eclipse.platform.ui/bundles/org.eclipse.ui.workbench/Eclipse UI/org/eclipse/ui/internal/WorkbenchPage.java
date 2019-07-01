@@ -4662,32 +4662,34 @@ public class WorkbenchPage implements IWorkbenchPage {
 			IEditorInput curInput = inputs[i];
 			IMemento curMemento = mementos == null ? null : mementos[i];
 
-			// If we don't have an editorID get it from the memento
-			if (curEditorID == null && curMemento != null) {
-				curEditorID = curMemento.getString(IWorkbenchConstants.TAG_ID);
-			}
-
-			// If we don't have an input create on from the memento
-			if (curInput == null && curMemento != null) {
-				try {
-					curInput = EditorReference.createInput(curMemento);
-				} catch (PartInitException e) {
-					curInput = null;
-					exceptions[i] = e;
-					continue;
+			if (curMemento != null) {
+				// If we don't have an editorID get it from the memento
+				if (curEditorID == null) {
+					curEditorID = curMemento.getString(IWorkbenchConstants.TAG_ID);
 				}
-			}
 
-			// Adjust the memento so that it's always 'comlpete (i.e. including
-			// both input and editor state)
-			if (curMemento != null && !curMemento.getID().equals(IWorkbenchConstants.TAG_EDITOR)) {
-				XMLMemento outerMem = XMLMemento.createWriteRoot(IWorkbenchConstants.TAG_EDITOR);
-				outerMem.putString(IWorkbenchConstants.TAG_ID, curEditorID);
-				outerMem.copyChild(curMemento);
+				// If we don't have an input create on from the memento
+				if (curInput == null) {
+					try {
+						curInput = EditorReference.createInput(curMemento);
+					} catch (PartInitException e) {
+						curInput = null;
+						exceptions[i] = e;
+						continue;
+					}
+				}
 
-				XMLMemento inputMem = (XMLMemento) outerMem.createChild(IWorkbenchConstants.TAG_INPUT);
-				inputMem.putString(IWorkbenchConstants.TAG_FACTORY_ID, curInput.getPersistable().getFactoryId());
-				inputMem.putString(IWorkbenchConstants.TAG_PATH, curInput.getName());
+				// Adjust the memento so that it's always 'complete (i.e. including
+				// both input and editor state)
+				if (!curMemento.getID().equals(IWorkbenchConstants.TAG_EDITOR)) {
+					XMLMemento outerMem = XMLMemento.createWriteRoot(IWorkbenchConstants.TAG_EDITOR);
+					outerMem.putString(IWorkbenchConstants.TAG_ID, curEditorID);
+					outerMem.copyChild(curMemento);
+
+					XMLMemento inputMem = (XMLMemento) outerMem.createChild(IWorkbenchConstants.TAG_INPUT);
+					inputMem.putString(IWorkbenchConstants.TAG_FACTORY_ID, curInput.getPersistable().getFactoryId());
+					inputMem.putString(IWorkbenchConstants.TAG_PATH, curInput.getName());
+				}
 			}
 
 			// OK, by this point we should have the EditorInput, the editor ID
