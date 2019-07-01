@@ -4695,11 +4695,9 @@ public class WorkbenchPage implements IWorkbenchPage {
 			// OK, by this point we should have the EditorInput, the editor ID
 			// and the memento (if any)
 			if (reg.findEditor(curEditorID) == null) {
-				references[i] = null;
 				exceptions[i] = new PartInitException(
 						NLS.bind(WorkbenchMessages.EditorManager_unknownEditorIDMessage, curEditorID));
 			} else if (curInput == null) {
-				references[i] = null;
 				exceptions[i] = new PartInitException(
 						NLS.bind(WorkbenchMessages.EditorManager_no_persisted_state, curEditorID));
 			} else {
