@@ -4654,7 +4654,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 
 		PartInitException[] exceptions = new PartInitException[inputs.length];
 		IEditorReference[] references = new IEditorReference[inputs.length];
-		boolean hasFailures = false;
 
 		IEditorRegistry reg = getWorkbenchWindow().getWorkbench().getEditorRegistry();
 		MPart editorToActivate = null;
@@ -4675,7 +4674,6 @@ public class WorkbenchPage implements IWorkbenchPage {
 				} catch (PartInitException e) {
 					curInput = null;
 					exceptions[i] = e;
-					hasFailures = true;
 					continue;
 				}
 			}
@@ -4698,12 +4696,10 @@ public class WorkbenchPage implements IWorkbenchPage {
 				references[i] = null;
 				exceptions[i] = new PartInitException(
 						NLS.bind(WorkbenchMessages.EditorManager_unknownEditorIDMessage, curEditorID));
-				hasFailures = true;
 			} else if (curInput == null) {
 				references[i] = null;
 				exceptions[i] = new PartInitException(
 						NLS.bind(WorkbenchMessages.EditorManager_no_persisted_state, curEditorID));
-				hasFailures = true;
 			} else {
 				// Is there an existing editor ?
 				IEditorReference[] existingEditors = findEditors(curInput, curEditorID, matchFlags);
@@ -4794,7 +4790,7 @@ public class WorkbenchPage implements IWorkbenchPage {
 			legacyWindow.firePerspectiveChanged(this, getPerspective(), CHANGE_EDITOR_OPEN);
 		}
 
-		if (hasFailures) {
+		if (Arrays.stream(exceptions).anyMatch(e -> e != null)) {
 			throw new MultiPartInitException(references, exceptions);
 		}
 
